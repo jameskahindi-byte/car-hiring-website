@@ -1,0 +1,221 @@
+
+/* MBR Drive - Red and Black Theme */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #111111;
+color: #ffffff;
+line-height: 1.6;
+}
+
+.navbar {
+background-color: #080808;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+border-bottom: 2px solid #e50914;
+}
+
+.logo {
+color: #ffffff;
+font-size: 25px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.logo span,
+h1 span,
+.hero h1 span {
+color: #e50914;
+}
+
+nav {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #e50914;
+}
+
+.hero {
+min-height: 380px;
+padding: 80px 8%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+gap: 15px;
+background: linear-gradient(120deg, #1c1c1c, #080808);
+}
+
+.eyebrow {
+color: #e50914;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.hero h1 {
+font-size: clamp(32px, 5vw, 55px);
+line-height: 1.2;
+}
+
+.hero p {
+color: #cccccc;
+}
+
+.section {
+padding: 55px 8%;
+min-height: 60vh;
+}
+
+.section h1,
+.section h2 {
+margin-bottom: 12px;
+}
+
+.muted {
+color: #bbbbbb;
+margin-bottom: 25px;
+}
+
+.car-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 22px;
+margin-top: 25px;
+}
+
+.car-card {
+background-color: #1d1d1d;
+padding: 25px;
+border: 1px solid #333333;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+}
+
+.car-card:hover {
+border-color: #e50914;
+}
+
+.car-icon {
+font-size: 42px;
+}
+
+.car-card p {
+color: #cccccc;
+}
+
+.car-card strong {
+color: #ff4545;
+}
+
+.btn {
+display: inline-block;
+background-color: #e50914;
+color: #ffffff;
+padding: 11px 20px;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+font-size: 15px;
+cursor: pointer;
+margin-top: 8px;
+}
+
+.btn:hover {
+background-color: #b80710;
+}
+
+.booking-form {
+max-width: 550px;
+background-color: #1d1d1d;
+padding: 25px;
+border: 1px solid #333333;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.booking-form label {
+font-weight: bold;
+margin-top: 8px;
+}
+
+.booking-form input,
+.booking-form select {
+width: 100%;
+padding: 12px;
+background-color: #111111;
+color: #ffffff;
+border: 1px solid #555555;
+border-radius: 5px;
+font-size: 15px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+outline: 2px solid #e50914;
+}
+
+#bookingTotal {
+color: #ff4545;
+font-size: 18px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+#bookingMessage {
+margin-top: 10px;
+overflow-wrap: anywhere;
+}
+
+footer {
+background-color: #080808;
+color: #aaaaaa;
+text-align: center;
+padding: 22px;
+border-top: 2px solid #e50914;
+margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+.navbar {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.hero {
+padding: 55px 6%;
+}
+
+.section {
+padding: 35px 6%;
+}
+
+.booking-form {
+padding: 18px;
+}
+}
+
